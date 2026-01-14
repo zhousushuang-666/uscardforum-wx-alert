@@ -66,4 +66,4 @@ try:
     data = resp.json()
 except Exception as e:
     print(f"JSON解析失败: {e}")
-    exit(
+    exit(1)

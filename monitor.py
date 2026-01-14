@@ -9,8 +9,8 @@ WX_APP_TOKEN = os.environ.get("WX_APP_TOKEN")
 WX_UID = os.environ.get("WX_UID")
 
 KEYWORDS = [
-    r"approved",
-    r"instant approval",
+    r"JFK",
+    r"头等",
     r"\bDP\b",
     r"漏洞",
     r"成功",

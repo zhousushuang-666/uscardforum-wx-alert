@@ -2,8 +2,14 @@ import requests
 import re
 import os
 
+import time
+
 TOPIC_URL = "https://www.uscardforum.com/t/topic/240330.json"
-STATE_FILE = "last_post_id.txt"
+
+# 加时间戳，避免缓存
+url = f"{TOPIC_URL}?ts={int(time.time())}"
+data = requests.get(url).json()
+
 
 WX_APP_TOKEN = os.environ.get("WX_APP_TOKEN")
 WX_UID = os.environ.get("WX_UID")

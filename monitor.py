@@ -12,8 +12,8 @@ WX_UID = os.environ.get("WX_UID")
 
 # 关键词列表
 KEYWORDS = [
-    r"奖励",
-    r"开卡",
+    r"JFK",
+    r"头等",
     r"instant approval",
     r"\bDP\b",
     r"成功",

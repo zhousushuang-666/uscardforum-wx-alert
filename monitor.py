@@ -10,9 +10,9 @@ STATE_FILE = "last_post_id.txt"        # 记录上一次抓取的帖子 ID
 WX_APP_TOKEN = os.environ.get("WX_APP_TOKEN")
 WX_UID = os.environ.get("WX_UID")
 
-# 关键词列表，可根据需要修改
+# 关键词列表
 KEYWORDS = [
-    r"JFK",
+    r"奖励",
     r"开卡",
     r"instant approval",
     r"\bDP\b",
@@ -66,7 +66,4 @@ try:
     data = resp.json()
 except Exception as e:
     print(f"JSON解析失败: {e}")
-    exit(1)
-
-# 获取帖子回复列表
-posts = data.get("post_stream", {})._
+    exit(
